@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   license: "Permis B",
   phone: "+212 668 09 02 85",
   email: "jilitsig@gmail.com",
-  location: "Agadir, Maroc",
+  location: "Mohammedia, Maroc",
   linkedin: "https://www.linkedin.com/in/Jilitelmostafa",
   cvLink: "https://drive.google.com/file/d/1PBuR0Xj-wsCRGX_LQacS-sPULB3F6uGj/view?usp=drive_open",
   socials: {
@@ -19,7 +19,7 @@ export const PERSONAL_INFO = {
     whatsapp: "https://wa.me/212668090285",
     linkedin: "https://www.linkedin.com/in/Jilitelmostafa"
   },
-  objective: "Géomaticien spécialisé en SIG et télédétection avec plus de 5 ans d’expérience. Expert en modélisation, cartographie, analyse des risques et études de terrain. Mon objectif est d'intégrer un poste stratégique en SIG offrant des opportunités d'innovation et d'évolution."
+  objective: "Géomaticien spécialisé en SIG et télédétection avec plus de 5 ans d’expérience. Expert en modélisation, cartographie, analyse des risques et études de terrain."
 };
 
 export const PROJECTS: Project[] = [

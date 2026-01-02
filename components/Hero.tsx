@@ -98,7 +98,13 @@ const Hero: React.FC = () => {
           {[
             { icon: MapPin, label: 'Localisation', value: PERSONAL_INFO.location, color: 'text-indigo-600 bg-indigo-50 dark:bg-indigo-900/30' },
             { icon: Mail, label: 'Email', value: PERSONAL_INFO.email, color: 'text-rose-600 bg-rose-50 dark:bg-rose-900/30' },
-            { icon: Phone, label: 'Téléphone', value: PERSONAL_INFO.phone, color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30' },
+            { 
+              icon: Phone, 
+              label: 'Téléphone', 
+              value: PERSONAL_INFO.phone, 
+              color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/30',
+              href: PERSONAL_INFO.socials.whatsapp 
+            },
             { icon: ExternalLink, label: 'LinkedIn', value: 'Connecter', color: 'text-blue-600 bg-blue-50 dark:bg-blue-900/30', href: PERSONAL_INFO.linkedin }
           ].map((item, idx) => (
             <div key={idx} className="p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800 shadow-sm flex items-center gap-3 group transition-all hover:shadow-xl hover:-translate-y-1">
