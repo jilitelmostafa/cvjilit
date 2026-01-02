@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -57,6 +58,7 @@ const App: React.FC = () => {
         <Projects />
       </main>
       <Contact />
+      <ScrollToTop />
     </div>
   );
 };
