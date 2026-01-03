@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { PERSONAL_INFO } from '../constants';
-import { Sun, Moon } from 'lucide-react';
+import { Sun, Moon, ExternalLink } from 'lucide-react';
 
 interface NavbarProps {
   isDark: boolean;
@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
             <span className="font-bold text-xl text-slate-900 dark:text-white tracking-tight hidden sm:block">{PERSONAL_INFO.name}</span>
           </div>
           
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300 items-center">
             <a href="#about" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors relative group">
               À Propos
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
@@ -38,6 +38,15 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
             <a href="#education" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors relative group">
               Formation
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all group-hover:w-full"></span>
+            </a>
+            <a 
+              href="https://jilitdesigner.netlify.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-600 hover:text-white transition-all border border-indigo-100 dark:border-indigo-800/50 font-bold group"
+            >
+              Jilit Designer
+              <ExternalLink size={14} className="group-hover:scale-110 transition-transform" />
             </a>
           </div>
 
